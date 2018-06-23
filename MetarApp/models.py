@@ -5,7 +5,7 @@ import os
 class metar(models.Model):
    # user = models.ForeignKey(User, unique=True)
     scode=models.CharField(max_length=15)
-    scode_text=models.CharField(max_length=1000)
+    scode_text=models.CharField(max_length=1000, null=True)
     
     def __str__(self):
         return self.scode
